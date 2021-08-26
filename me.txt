@@ -1,0 +1,4 @@
+VPC Thiết kế mạng riêng bảo mật cho doanh nghiệp trên AWS/Cloud
+    Thiết lập lớp mạng private riêng 
+    Thiết lập lớp mạng public ra bên ngoài 
+    
