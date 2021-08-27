@@ -1,4 +1,13 @@
 VPC Thiết kế mạng riêng bảo mật cho doanh nghiệp trên AWS/Cloud
     Thiết lập lớp mạng private riêng 
     Thiết lập lớp mạng public ra bên ngoài 
+AWS VPC Nat instance & Nat gateway
+    Nat: Mỗi 1 thiết bị(máy tính, điện thoại...) đều có 1 địa chỉ riêng(IP), thực chất nó chỉ là local IP thôi cho nên internet ko truy
+        cập được vào thiết bị đó. Để các thiết bị này có thể truy cập được vào internet thì Nat có nhiệm vụ phân giải địa chỉ local ra 
+        ngoài internet(phân giải địa chỉ local ra ngoài địa chỉ global) nhưng mà internet ko truy cập được vào nó
+    Nat gateway: Cho phép ra ngoài internet
+    Để đảm bảo tính bảo mật tốt hơn thì sau khi thiết lập Nat và cài đặt các service trong local rồi thì stop Nat đi đảm bảo ko bị dùng
+        Nat để tấn công vào hệ thống của mình 
+    Nat gateway: Cơ chế hoạt động cũng giống như Nat instance nhưng nó quản lý bên phía AWS nên tạo rất dễ dàng
+    Mục đích để cài các service vào trong các Subnet local
     
