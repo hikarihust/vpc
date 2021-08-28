@@ -24,4 +24,11 @@ AWS VPC Bastion Host Bảo vệ mạng dịch vụ cho doanh nghiệp trên AWS 
     Internet Gateway =＞ Route Table =＞ Network ACL =＞ Security Group =＞ Bastion host =＞ Service
     sudo su -
     yum install httpd -y
+AWS VPC Endpoint Tối ưu hóa chi phí sử dụng AWS Cloud cho doanh nghiệp bằng VPC Endpoint
+    VPC Endpoint đóng vai trò là cầu nối, và là kết nối riêng biệt để các instance trong VPC có thể giao tiếp với các 
+        dịch vụ như S3, Dynamodb ... khác trên AWS mà không cần đi qua Internet, NAT, VPN, hay AWS Direct Connect
+    Tất cả các traffic đi từ VPC đến AWS Service đều không đi ra khỏi AWS network.
+    Lợi ích khi sử dụng VPC Endpoint
+        Giảm chi phí sử dụng AWS vì chỉ kết nối trong AWS Cloud mà ko ra ngoài internet
+        Vì không ra ngoài internet nên đảm bảo tính bảo mật
     
