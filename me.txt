@@ -10,4 +10,10 @@ AWS VPC Nat instance & Nat gateway
         Nat để tấn công vào hệ thống của mình 
     Nat gateway: Cơ chế hoạt động cũng giống như Nat instance nhưng nó quản lý bên phía AWS nên tạo rất dễ dàng
     Mục đích để cài các service vào trong các Subnet local
+AWS VPC ACL Access Control List Quản lý traffic vào ra services cho doanh nghiệp trên AWS
+    ACL sẽ Control các traffic vào ra, service nào được vào, service nào được ra
+    Mỗi 1 Subnet chỉ nằm duy nhất trên 1 ACL
+    Để cài đặt được bằng lệnh yum thì cần open các Port: 1024-65535
+        Sau khi cài xong thì có thể bỏ    
+    yum install httpd -y
     
