@@ -16,4 +16,12 @@ AWS VPC ACL Access Control List Quản lý traffic vào ra services cho doanh ng
     Để cài đặt được bằng lệnh yum thì cần open các Port: 1024-65535
         Sau khi cài xong thì có thể bỏ    
     yum install httpd -y
+AWS VPC Bastion Host Bảo vệ mạng dịch vụ cho doanh nghiệp trên AWS Cloud bằng Bastion host
+    Khi kết nối đến dịch vụ cloud trực tiếp thì về cơ bản là không tốt và dễ bị tấn công, chính vì vậy để kết nối đến 
+        các dịch vụ trong VPS của mình chúng ta sẽ thông qua 1 server chuyên dụng khác. Những server như thế được gọi 
+        là Bastion Server. Những server này thường tắt khi không sử dụng nên hoàn toàn có thể an tâm người bên ngoài 
+        xâm nhập là rất khó, nên sẽ làm tăng an toàn bảo mật lên.
+    Internet Gateway =＞ Route Table =＞ Network ACL =＞ Security Group =＞ Bastion host =＞ Service
+    sudo su -
+    yum install httpd -y
     
